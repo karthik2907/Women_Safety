@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+         <style>
+            .mohan{
+                text-align: center;
+                font-family: roboto;
+                font-size: 20px;
+                font-style: bold;
+                 background-color:#E2F9CC
+            }
+            .karthik{
+               
+                font-family: roboto;
+                font-size: 20px;
+                font-style: bold;
+                 background-color:#E2F9CC;
+                 line-height:110%;
+               
+            }
+            .accordion {
+  background-color: #E2F9CC;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+            
+            </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+   <h1 style="text-align:center; background-color:#E2F9CC "> <marquee>SUCCESSFUL WOMEN IN INDIA</marquee></h1>
+    <body>
+    <button class="accordion">KUMUD SRINIVASAN, Presdent, Intel </button>
+    <div class="panel">
+    <p class="karthik">
+          <img src="kumud.jpg"  width="255px" height="135px">
+        In Junary she was appointed the first woman president $54 billion computer chip maker ,Intel
+    </P>
+    </div>
+    <button class="accordion">CHITRA RAMAKRISHNA, Joint MD, National Stock Exchange </button>
+    <div class="panel">
+    <p class="karthik">
+          <img src="chitra.jpg"  width="255px" height="135px">
+      On April 1, 2013 Ramakrishna will take charge as Managing Director and CEO of the National Stock.
+    </P>
+    </div>
+    <button class="accordion">JAYANTI CHAUHAN, Director, Bisleri Group </button>
+    <div class="panel">
+    <p class="karthik">
+          <img src="jayanti.jpg"  width="255px" height="135px">
+        Chauhan is preparing to take over operations of the 1,000-crore Bisleri brand from her father Ramesh chauhan.
+    </P>
+    </div>
+    <button class="accordion">KAREENA KAPOOR,Actor </button>
+    <div class="panel">
+    <p class="karthik">
+          <img src="kareena.jpg"  width="255px" height="135px">
+        Kareean kapoor Khan Pataudi is the highest paid female celebrity in india with earnings of Rs 73.47 crore in 2012.
+    </P>
+    </div>
+    <button class="accordion">SAINA NEHWAL,Badminton </button>
+    <div class="panel">
+    <p class="karthik">
+          <img src="saina.jpg"  width="255px" height="135px">
+           She won India its third medal at the London Olympics and the first ever in badminton; and is currently the second best badminton player in the world.
+    </P>
+    </div>
+    <button class="accordion">NITA AMBANI, Presdent, Chairman, Dhirubhai Ambani Foundation </button>
+    <div class="panel">
+    <p class="karthik">
+          <img src="ambani.jpg"  width="255px" height="135px">
+          Despite being married to Reliance Chairman Mukesh Ambani, she has created an identity of her own as an astute businesswoman.<br> She sits on the Board of hotel operator East Indian Hotels and also leads a number of enterprises. 
+    </P>
+    </div>
+    <button class="accordion">CHANDA KOCHAR, MD,CEO, ICICI Bank</button>
+    <div class="panel">
+    <p class="karthik">
+          <img src="kochar.jpg"  width="255px" height="135px">
+        In 2009 she became the youngest CEO and first woman to head ICICI bank, the second-largest lender in India.
+    </P>
+    </div>
+    
+        <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+    </body>
+</html>

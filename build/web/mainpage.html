@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Mainpage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+ 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<style>
+    
+.mySlides {display:none;}
+  #blink {
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+            transition: 0.1s;
+            text-decoration: none;
+        }
+        a{
+            text-decoration:none;
+            color: black;
+        }
+.mohan{
+   
+   padding-left: 400px;
+   padding-bottom: 100px;
+   padding-top: 20px;
+   padding-right: 400px;
+}
+</style>
+</head>
+
+<body>
+    <div style="background-color:#E2F9CC">
+        <h1 style="text-align:center"><b>WELCOME</b></h1>
+         <Marquee><a href="https://play.google.com/store/apps/details?id=com.likhatech.disha&hl=en_IN&gl=US" target="_blank"  style="text-decoration: none;"><p id="blink">Download Disha App </p></a></Marquee>
+    </div>
+    <div bg-color="D3D3D3" class="w3-content w3-display-container">
+
+<div  class="w3-display-container mySlides">
+  <img src="ropes.jpg" width="965px" height="445px">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="olive.png" width="965px" height="445px">
+  
+</div>
+<div class="w3-display-container mySlides">
+  <img src="together.jpg" width="965px" height="445px">
+ 
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="mother.jpg" width="965px" height="445px">
+  
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<pre style="background-color:#989898; color:black" >
+
+    <b>ABOUT US</b>                          <b>DISCOVER</b>                            <b>HELP</b>                                 <b>REACH US</b>
+                                                                                                     
+                                                                                                            <button type="button" class="btn btn-info"><span class="fa fa-instagram"""></span></button> <button type="button" class="btn btn-info"><span class="fa fa-facebook"""></span></button> <button type="button" class="btn btn-info"><span class="fa fa-youtube"""></span></button> <button type="button" class="btn btn-info"><span class="fa fa-twitter"""></span></button>
+  MAHILA RAKSHA IS AN              <a href="www.something.com">Gallery</a>                           <a href="signuppage.html">Account Sign In</a>
+  ORGANIZATION ESTABLISHED         <a href="www.something.com">Core Values</a>                       <a href="loginpage.com">Login</a>
+  BY HUMAN RESOURCE                <a href="www.something.com">Credits</a>                           Email:<a href="#">mahilaraksha@india.in</a>
+  MINISTARY OF INDIA.              <a href="www.something.com">FeedBack Report</a>   
+
+
+
+</pre>
+
+</body>
+</html>
